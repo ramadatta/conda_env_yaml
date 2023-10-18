@@ -1,3 +1,5 @@
+# The following commands were used to generate counts from parsebio raw fastq files
+
 conda create -n spipe python=3.10
 conda activate spipe
 unzip ParseBiosciences-Pipeline.1.0.5p.zip 
