@@ -27,4 +27,8 @@ ls
 cat 23L008212_S1_L001_R1_001.fastq.gz 23L008212_S1_L002_R1_001.fastq.gz >23L008212_S1_L001_002_R1_001.fastq.gz
 cat 23L008212_S1_L001_R2_001.fastq.gz 23L008212_S1_L002_R2_001.fastq.gz >23L008212_S1_L001_002_R2_001.fastq.gz
 
+cat 23L008213_S2_L001_R1_001.fastq.gz 23L008213_S2_L002_R1_001.fastq.gz >23L008213_S2_L001_002_R1_001.fastq.gz
+cat 23L008213_S2_L001_R2_001.fastq.gz 23L008213_S2_L002_R2_001.fastq.gz >23L008213_S2_L001_002_R2_001.fastq.gz
 
+split-pipe --mode all --chemistry v2 -g /home/ramadatta/sw/ParseBiosciences-Pipeline.1.0.5p/genomes/hg38 --fq1 Sample_23L008212/23L008212_S1_L001_002_R1_001.fastq.gz --fq2 Sample_23L008212/23L008212_S1_L001_002_R2_001.fastq.gz --output_dir /home/ramadatta/Analysis/1_Schiller_Lab/Projects/Misc/Parse_Bio_Data_Analysis/Sample_23L008212 
+split-pipe --mode all --chemistry v2 -g /home/ramadatta/sw/ParseBiosciences-Pipeline.1.0.5p/genomes/hg38 --fq1 Sample_23L008213/23L008213_S2_L001_002_R1_001.fastq.gz --fq2 Sample_23L008213/23L008213_S2_L001_002_R2_001.fastq.gz --output_dir /home/ramadatta/Analysis/1_Schiller_Lab/Projects/Misc/Parse_Bio_Data_Analysis/Sample_23L008213 
